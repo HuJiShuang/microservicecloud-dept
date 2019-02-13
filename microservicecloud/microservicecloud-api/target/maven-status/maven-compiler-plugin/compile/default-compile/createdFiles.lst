@@ -1,0 +1,4 @@
+edu/bit/hjs/springcloud/entities/Dept.class
+edu/bit/hjs/springcloud/service/DeptClientServiceFallbackFactory.class
+edu/bit/hjs/springcloud/service/DeptClientService.class
+edu/bit/hjs/springcloud/service/DeptClientServiceFallbackFactory$1.class

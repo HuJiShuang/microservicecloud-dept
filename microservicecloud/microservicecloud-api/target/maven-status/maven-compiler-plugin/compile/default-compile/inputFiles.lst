@@ -1,0 +1,3 @@
+/home/hu/microservicecloud/microservicecloud-api/src/main/java/edu/bit/hjs/springcloud/service/DeptClientService.java
+/home/hu/microservicecloud/microservicecloud-api/src/main/java/edu/bit/hjs/springcloud/service/DeptClientServiceFallbackFactory.java
+/home/hu/microservicecloud/microservicecloud-api/src/main/java/edu/bit/hjs/springcloud/entities/Dept.java

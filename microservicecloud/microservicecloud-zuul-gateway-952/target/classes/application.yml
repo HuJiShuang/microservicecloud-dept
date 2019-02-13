@@ -1,0 +1,26 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+
+eureka:
+  client:     #客户端注册进eureka服务列表中
+    service-url:
+      #单机版defaultZone:http://loaclhost:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+    instance:  #用于修改主机名称和服务名称
+      instance-id: gateway-9527.com
+
+zuul:
+  routes:
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+  ignored-services: "*"     //使用*代表忽略掉所有的服务
+  prefix: /hjs              //公共的子前缀,组成/hjs/mydept的访问路径
+info:
+  app.name: hjs-microservicecloud
+  company.name: www.hjs.com
+  build.artifacId: microservicecloud-zuul-gateway-952
+  build.version: 1.0-SNAPSHOT
